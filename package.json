@@ -1,22 +1,26 @@
-
 {
   "name": "group-six",
+  "homepage": "https://gitname.github.io/react-gh-pages",
   "version": "1.0.0",
-  "description": "This is a starter pack for React App with Node backend which can be directly hosted on heroku",
+  "description": "",
   "main": "server.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node server.js",
     "server": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "group06",
   "license": "",
   "dependencies": {
     "concurrently": "^3.5.1",
-    "express": "^4.16.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "mongodb": "^4.5.0",
     "nodemon": "^1.17.2"
   }
 }
