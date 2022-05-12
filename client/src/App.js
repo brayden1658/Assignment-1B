@@ -7,11 +7,12 @@ import SEPractice from "./pages/SE-Practice";
 import SubmitArticle from "./pages/Submit-Article";
 import NotFoundPage from "./pages/404";
 
+//todo(Ratchet7x5): on NPM START, you should be taken to /Home page
 const App = () => {
   return (
     <Router >
       <div>
-        <h1>Software Engineering Practice Evidence Repository (SEPER)</h1>
+        <h1>Software Practice Empirical Evidence Database  (SPEED)</h1>
         <ul className="header">
           <li>
             <NavLink exact to="/">Home</NavLink>
