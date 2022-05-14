@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import { BrowserRouter as Router, Routes, Route, NavLink, Navigate, useLocation } from "react-router-dom";
+import React/*, { useRef }*/ from "react";
+import { BrowserRouter as Router, Routes, Route, NavLink, Navigate/*, useLocation*/ } from "react-router-dom";
 import "./index.css"
 
 import Home from "./pages/Home";
@@ -7,7 +7,10 @@ import SEPractice from "./pages/SE-Practice";
 import SubmitArticle from "./pages/Submit-Article";
 import NotFoundPage from "./pages/404";
 
-//todo(Ratchet7x5): on NPM START, you should be taken to /Home page
+/**
+ * todo(Ratchet7x5): on NPM START, you should be taken to /Home page
+ * Current issue: you are taken to the ERROR 404 page instead. 
+ */
 const App = () => {
   return (
     <Router >

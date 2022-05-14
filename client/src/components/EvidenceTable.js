@@ -1,5 +1,4 @@
-import React, { useMemo } from "react";
-import articles from "../dummydata/articles.js";
+import React/*, { useMemo }*/ from "react";
 import { useTable, useSortBy, usePagination } from "react-table";
 
 const Table = ({ selectedPractice, columns, data }) => {
@@ -113,7 +112,7 @@ const Table = ({ selectedPractice, columns, data }) => {
             setPageSize(Number(e.target.value));
           }}
         >
-          {[3, 7, 15].map((pageSize) => (
+          {[5, 10, 15].map((pageSize) => (
             <option key={pageSize} value={pageSize}>
               Show {pageSize}
             </option>

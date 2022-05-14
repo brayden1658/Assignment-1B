@@ -10,7 +10,7 @@ const SEPractice = () => {
 
   return (
     <div>
-      <h2>Select SE Practice to get evidence for the claimed benefits</h2>
+      <h2>Select a SE Practice to get evidence for the claimed benefits</h2>
       <Dropdown setSelectedPractice={setSelectedPractice}/>
       <TableStyles>
         <Table selectedPractice={selectedPractice} data={articles} columns={TableColumns} />
