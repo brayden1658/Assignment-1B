@@ -1,4 +1,7 @@
-require("dotenv").config();
+//Ratchet7x5: without this, the .env file is NOT read
+const dotenv = require("dotenv");
+dotenv.config();
+
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
@@ -7,6 +10,7 @@ const app = express();
 const connectDb = require("./database/mongodb");
 const articles = require("./routes/articles");
 const practices = require("./routes/practices");
+//console.log(process.env.STARTUPMESSAGE); //testing if .env is read
 
 // Connect MongoDB Atlas
 connectDb();
@@ -26,5 +30,5 @@ app.get("*", (req, res) => {
 })
 
 // Listen
-const PORT = 5000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}.`));
