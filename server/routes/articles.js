@@ -4,6 +4,7 @@ const Article = require("../models/Article");
 
 // GET
 router.get("/", (req, res) => {
+    console.log(req.body);
     Article
         .find()
         .then((articles) => res.json(articles))
