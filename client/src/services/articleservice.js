@@ -10,7 +10,7 @@ import axios from "axios";
 
 //gets all articles from the MongoDB
 const getAllArticles = async () => {
-  return axios.get("/api/articles").then((articles) => articles);
+  return axios.get("/api/articles").then((articles) => articles.data);
 };
 
 const postArticle = async (article) => {

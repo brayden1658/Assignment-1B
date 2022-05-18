@@ -49,15 +49,16 @@ const SubmissionForm = () => {
         source: source,
         pubyear: pubyear,
         doi: doi,
-        claim: "No input field in form for this attribute", 
-        evidence: "No input field in form for this attribute",
+        claim: "-1", 
+        evidence: "-1",
         sepractice: sepractice,
       }
     ]
 
     console.log(JSON.stringify(article));
     
-    postArticle(JSON.stringify(article))
+    postArticle(article)
+    //postArticle(JSON.stringify(article))
     .then((article) => { 
       console.log(article);
     })

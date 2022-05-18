@@ -10,7 +10,6 @@ const app = express();
 const connectDb = require("./database/mongodb");
 const articles = require("./routes/articles");
 const practices = require("./routes/practices");
-//console.log(process.env.STARTUPMESSAGE); //testing if .env is read
 
 // Connect MongoDB Atlas
 connectDb();
@@ -23,12 +22,14 @@ app.use(express.json());
 app.use("/api/articles", articles);
 app.use("/api/practices", practices);
 
-// Server React static build
-app.use(express.static(path.join(__dirname, "build")));
+// Server React static build -- comment/uncomment here and there
+/*app.use(express.static(path.join(__dirname, "build")));
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "build", "index.html"));
-})
+})*/
 
 // Listen
 const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}.`));
+
+module.exports = app;
