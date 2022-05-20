@@ -11,7 +11,7 @@ server/node_modules
 /coverage
 
 # production
-#/build #TEMP REMOVED
+/build/
 
 # misc
 .DS_Store
@@ -31,7 +31,8 @@ yarn-error.log*
 .idea/
 .vscode/
 node_modules/
-#build #TEMP REMOVED
+build
+/client/build
 .DS_Store
 *.tgz
 my-app*
