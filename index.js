@@ -23,10 +23,17 @@ app.use("/api/articles", articles);
 app.use("/api/practices", practices);
 
 // Server React build
-app.use(express.static(path.join(__dirname, "/build")));
+//new func
+const root = require('path').join(__dirname, 'client', 'build')
+app.use(express.static(root));
+app.get("*", (req, res) => {
+    res.sendFile('index.html', { root });
+})
+//old func
+/*app.use(express.static(path.join(__dirname, "/client/build")));
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-})
+})*/
 
 // Listen
 const PORT = process.env.PORT;
