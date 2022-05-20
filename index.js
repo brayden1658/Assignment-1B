@@ -22,8 +22,8 @@ app.use(express.json());
 app.use("/api/articles", articles);
 app.use("/api/practices", practices);
 
-// Server React static build -- comment/uncomment here and there
-app.use(express.static(path.join(__dirname, "client/build")));
+// Server React build
+app.use(express.static(path.join(__dirname, "/client/build")));
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 })
