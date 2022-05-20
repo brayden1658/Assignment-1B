@@ -11,7 +11,7 @@ const connectDb = require("./database/mongodb");
 const articles = require("./routes/articles");
 const practices = require("./routes/practices");
 
-// Connect MongoDB Atlas
+// Connect MongoDB Atlas 
 connectDb();
 
 // Use middleware
@@ -25,7 +25,7 @@ app.use("/api/practices", practices);
 // Server React static build -- comment/uncomment here and there
 app.use(express.static(path.join(__dirname, "/client/build")));
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client/build", "index.html"));
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 })
 
 // Listen
