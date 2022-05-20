@@ -1,4 +1,4 @@
-import React from "react";
+
 //import { useRef } from "react";
 import SEPractices from "../dummydata/SEPractices";
 
