@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/brayden1658/Assignment-1B#readme",
   "engines": {
-    "node": "16.4.0"
+    "node": "16.x"
   }
 }
