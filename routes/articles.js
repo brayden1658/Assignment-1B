@@ -21,4 +21,13 @@ router.post("/", (req, res) => {
         .catch((err) => res.status(400).json({ error: `Unable to add this article. ${err.message}` }));
 });
 
+//PUT
+router.put("/", (req, res) => {
+    console.log(req.body);
+    Article
+        .findByIdAndUpdate(req.body)
+        .then(() => res.json({ msg: "Article updated successfully" }))
+        .catch((err) => res.status(400).json({ error: `Unable to update this article. ${err.message}` }));
+});
+
 module.exports = router;

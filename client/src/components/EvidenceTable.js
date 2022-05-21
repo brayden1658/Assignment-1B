@@ -127,11 +127,7 @@ const Table = ({ selectedPractice, columns, data }) => {
       case "TDD":
         return displayTable();
       case "Mob programming":       
-       return (
-        <h3>
-            No articles found for Mob programming.
-        </h3>
-      );
+        return displayTable();
       default:
         return (
           <h3>
