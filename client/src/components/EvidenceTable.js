@@ -124,9 +124,9 @@ const Table = ({ selectedPractice, columns, data }) => {
 
   const displaySelectedTable = () => {
     switch (selectedPractice) {
-      case data.sepractice==="TDD":
+      case "TDD":
         return displayTable();
-      case data.sepractice==="Mob programming":       
+      case "Mob programming":       
         return displayTable();
       default:
         return (
