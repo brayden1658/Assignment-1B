@@ -71,7 +71,6 @@ const SubmissionForm = () => {
   };
 
   const onSubmit = (data) => { 
-    //setResult(JSON.stringify(data)) ;
     addArticle();
   };
 

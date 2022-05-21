@@ -25,7 +25,7 @@ router.post("/", (req, res) => {
 router.put("/", (req, res) => {
     console.log(req.body);
     Article
-        .findByIdAndUpdate(req.body)
+        .findByIdAndUpdate(req.params.id)
         .then(() => res.json({ msg: "Article updated successfully" }))
         .catch((err) => res.status(400).json({ error: `Unable to update this article. ${err.message}` }));
 });
