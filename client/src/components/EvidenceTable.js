@@ -125,13 +125,11 @@ const Table = ({ selectedPractice, columns, data }) => {
   const displaySelectedTable = () => {
     switch (selectedPractice) {
       case "TDD":
-        return displayTable();
-      case "Mob programming":       
-       return (
-        <h3>
-            No articles found for Mob programming.
-        </h3>
-      );
+        if (data.length > 0) return displayTable();
+        return <h3>No articles found for TDD.</h3>;
+      case "Mob Programming":
+        if (data.length > 0) return displayTable();
+        return <h3>No articles found for Mob Programming.</h3>;
       default:
         return (
           <h3>

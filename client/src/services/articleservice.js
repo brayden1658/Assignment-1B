@@ -11,5 +11,9 @@ const postArticle = async (article) => {
 }
 
 //todo(ratchet7x5): add in PUT and DELETE here for mods 
+//PUT
+const updateArticle = async (article) => {
+  return axios.put("/api/articles", article)
+}
 
-export { getAllArticles, postArticle };
+export { getAllArticles, postArticle, updateArticle };
