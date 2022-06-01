@@ -8,16 +8,18 @@ const articles = [
       doi: "https://doi.org/10.1145/2601248.2601267",
       claim: "code quality improvement", 
       evidence: "strong support",
+      sepractice: "TDD",
     },
     {
       _id: "2",
       title: 'Realizing quality improvement through test driven development: results and experiences of four industrial teams',
       authors: "Nagappan, N., Maximilien, E. M., Bhat, T., Williams, L.",
-      source: " Empirical Software Engineering, 13(3), 289-302",
+      source: "Empirical Software Engineering, 13(3), 289-302",
       pubyear: "2008",
       doi: "https://doi.org/10.1007/s10664-008-9062-z",
       claim: "product quality improvement", 
       evidence: "weak support",
+      sepractice: "TDD",
     },
     {
       _id: "3",
@@ -28,6 +30,7 @@ const articles = [
       doi: "",
       claim: "code quality improvement", 
       evidence: "strong support",
+      sepractice: "TDD",
     },
     {
       _id: "4",
@@ -38,6 +41,7 @@ const articles = [
       doi: "https://doi.org/10.1109/esem.2007.35",
       claim: "code quality improvement", 
       evidence: "weak against",
+      sepractice: "TDD",
     },
     {
       _id: "5",
@@ -48,6 +52,7 @@ const articles = [
       doi: "",
       claim: "Mob Programming", 
       evidence: "none",
+      sepractice: "Mob Programming",
     },
   ];
 

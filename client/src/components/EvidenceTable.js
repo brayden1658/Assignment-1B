@@ -25,7 +25,7 @@ const Table = ({ selectedPractice, columns, data }) => {
     {
       columns,
       data,
-      initialState: { pageIndex: 0, pageSize: 3 },
+      initialState: { pageIndex: 0, pageSize: 5 },
     },
 
     useSortBy,

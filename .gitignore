@@ -11,7 +11,8 @@ server/node_modules
 /coverage
 
 # production
-/build
+build/
+client/build/
 
 # misc
 .DS_Store
@@ -32,6 +33,7 @@ yarn-error.log*
 .vscode/
 node_modules/
 build
+/client/build
 .DS_Store
 *.tgz
 my-app*
@@ -42,4 +44,3 @@ yarn-debug.log*
 yarn-error.log*
 /.changelog
 .npm/
-dist

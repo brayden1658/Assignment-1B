@@ -7,15 +7,6 @@ import SEPractice from "./pages/SE-Practice";
 import SubmitArticle from "./pages/Submit-Article";
 import NotFoundPage from "./pages/404";
 
-/**
- * todo(Ratchet7x5): on NPM START, you should be taken to /Home page
- * Current issue: you are taken to the ERROR 404 page instead. 
- */
-/**
- * Current issue: The Webpage directly takes you to the 404 page instead of the Home page. 
- * Code Author: Tarun Ramachandran
- * Code Reviewer: Brayden Wallace
- */
 const App = () => {
   return (
     <Router >
