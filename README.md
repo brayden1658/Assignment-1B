@@ -2,7 +2,4 @@
 Assignment 1B 
 Group 06
 
-Currently working on:
-* Trying to connect to MongoDB (success!)
-* Trying to Push and Pull data from MongoDB (bugged, trying to fix)
-* Fix some bugs
+Branch: This branch is used for testing any deployments to Heroku. On successful deployment, main will be tested against Heroku and merged as necessary. 
